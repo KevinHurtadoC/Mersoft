@@ -5,15 +5,16 @@
 @endsection
 
 @section('content')
-    <section class="content container-fluid">
+    <section class="content container-md offset-3 row align-items-center">
         <div class="">
-            <div class="col-md-12">
+            <div class="col-md-7">
 
                 @includeif('partials.errors')
 
                 <div class="card card-default">
-                    <div class="card-header">
-                        <span class="card-title">Actualizar datos</span>
+                    <div class="card-header bg-primary bg-opacity-75 text-center " >
+                        <span class="card-title fw-bold ">Editar Cliente</span>
+
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('clientes.update', $cliente->id) }}"  role="form" enctype="multipart/form-data">

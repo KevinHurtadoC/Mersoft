@@ -22,14 +22,14 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Cliente extends Model
 {
-    
+
     static $rules = [
-		'documento' => 'required',
+		'documento' => 'required|unique:clientes,documento',
 		'nombre' => 'required',
 		'apellido' => 'required',
 		'direccion' => 'required',
 		'telefono' => 'required',
-		'Correo' => 'required',
+		'Correo' => 'required|unique:clientes,Correo',
     ];
 
     protected $perPage = 20;
