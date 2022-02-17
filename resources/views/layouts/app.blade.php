@@ -34,6 +34,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
                     @if (Auth::check())
                     <ul class="navbar-nav me-auto fs-5  offset-md-1 fw-bold">
                         <a class="nav-link " href="{{ route('usuarios.index') }}">{{ __('Usuarios') }}</a>
@@ -48,9 +49,17 @@
 
                     @if (Auth::check())
                     <ul class="navbar-nav me-auto fs-5  offset-md-1 fw-bold">
+                        <a class="nav-link " href="{{ route('proveedores.index') }}">{{ __('proveedores') }}</a>
+                    </ul>
+                    @endif
+
+
+                    @if (Auth::check())
+                    <ul class="navbar-nav me-auto fs-5  offset-md-1 fw-bold">
                         <a class="nav-link " href="{{ route('productos.index') }}">{{ __('productos') }}</a>
                     </ul>
                     @endif
+                    </ul>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
