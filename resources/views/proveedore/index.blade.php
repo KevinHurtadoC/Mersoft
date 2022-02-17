@@ -7,18 +7,18 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-10 offset-1">
                 <div class="card">
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Proveedore') }}
+                                {{ __('Proveedores') }}
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('proveedores.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                <a href="{{ route('proveedores.create') }}" class="btn btn-success btn-sm float-right"  data-placement="left">
+                                  {{ __('Crear nuevo') }}
                                 </a>
                               </div>
                         </div>
@@ -40,9 +40,9 @@
 										<th>Nombre</th>
 										<th>Apellido</th>
 										<th>Empresa</th>
-										<th>Categoria</th>
-										<th>Dirreccion</th>
-										<th>Telefono</th>
+										<th>Categoría</th>
+										<th>Dirrección</th>
+										<th>Teléfono</th>
 										<th>Correo</th>
 
                                         <th></th>
@@ -64,12 +64,9 @@
 
                                             <td>
                                                 <form action="{{ route('proveedores.destroy',$proveedore->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('proveedores.show',$proveedore->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('proveedores.edit',$proveedore->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-warning" href="{{ route('proveedores.edit',$proveedore->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
                                                     @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
-                                                </form>
+                                                    </form>
                                             </td>
                                         </tr>
                                     @endforeach
