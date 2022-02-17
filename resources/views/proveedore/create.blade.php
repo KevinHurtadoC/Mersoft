@@ -5,9 +5,9 @@
 @endsection
 
 @section('content')
-    <section class="content container-md offset-3 row align-items-center">
+    <section class="content container-md offset-4 row align-items-center">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-6">
 
                 @includeif('partials.errors')
 
