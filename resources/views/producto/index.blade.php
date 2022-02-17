@@ -12,9 +12,10 @@
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
-                            <span id="card_title">
+                            <span class="fs-4 fw-bold"id="card_title">
                                 {{ __('Producto') }}
                             </span>
+
 
                              <div class="float-right">
                                 <a href="{{ route('productos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
@@ -34,8 +35,7 @@
                             <table class="table table-striped table-hover">
                                 <thead class="thead">
                                     <tr>
-                                        <th>No</th>
-                                        
+
 										<th>Código</th>
 										<th>Nombre</th>
 										<th>Categoría</th>
@@ -48,8 +48,7 @@
                                 <tbody>
                                     @foreach ($productos as $producto)
                                         <tr>
-                                            <td>{{ ++$i }}</td>
-                                            
+                                        
 											<td>{{ $producto->Código }}</td>
 											<td>{{ $producto->Nombre }}</td>
 											<td>{{ $producto->Categoría }}</td>
