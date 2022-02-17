@@ -20,4 +20,5 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::resource('usuarios',  App\Http\Controllers\usuarioController::class)->middleware('auth');
+Route::resource('clientes',  App\Http\Controllers\ClienteController::class)->middleware('auth');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
