@@ -33,7 +33,7 @@
         </div>
 
     </div>
-    <div class="box-footer mt20 mt20 offset-md-5">
+    <div class="box-footer mt20 mt20 offset-md-4">
         <br>
         <button type="submit" class="btn btn-primary ">Enviar</button>
         <a type="" href="{{ route('clientes.index') }}" class="btn btn-primary offset-1">Volver</a>

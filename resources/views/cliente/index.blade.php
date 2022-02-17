@@ -64,8 +64,8 @@
                                                 <form action="{{ route('clientes.destroy',$cliente->id) }}" method="POST">
                                                     <a class="btn btn-sm btn-success" href="{{ route('clientes.edit',$cliente->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
                                                     @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                    <form action="{{ url('/cliente/'.$cliente->id)}}" class="d-inline" method="post">
+                                                      
                                                 </form>
                                             </td>
                                         </tr>

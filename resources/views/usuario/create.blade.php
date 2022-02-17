@@ -12,7 +12,7 @@
                 @includeif('partials.errors')
 
                 <div class="card  card-default">
-                    <div class="card-header bg-primary bg-opacity-75 text-center " >
+                    <div class="card-header bg-info bg-opacity-75 text-center " >
                         <span class="card-title fw-bold ">Crear Usuario</span>
 
                     </div>

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->String('Nombre');
             $table->String('Apellido');
             $table->String('Empresa');
-            $table->bigInteger('Categoria');
+            $table->String('Categoria');
             $table->String('Dirreccion');
             $table->String('Telefono');
             $table->String('Correo');

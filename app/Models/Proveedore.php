@@ -26,14 +26,14 @@ class Proveedore extends Model
 {
     
     static $rules = [
-		'Nit_Empresa' => 'required',
+		'Nit_Empresa' => 'required|unique:proveedores,Nit_Empresa',
 		'Nombre' => 'required',
 		'Apellido' => 'required',
 		'Empresa' => 'required',
 		'Categoria' => 'required',
 		'Dirreccion' => 'required',
 		'Telefono' => 'required',
-		'Correo' => 'required',
+		'Correo' => 'required|unique:proveedores,Correo',
     ];
 
     protected $perPage = 20;
