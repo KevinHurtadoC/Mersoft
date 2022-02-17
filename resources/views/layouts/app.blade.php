@@ -38,6 +38,18 @@
                     <ul class="navbar-nav me-auto fs-5  offset-md-1 fw-bold">
                         <a class="nav-link " href="{{ route('usuarios.index') }}">{{ __('Usuarios') }}</a>
                     </ul>
+
+                    @endif
+                    @if (Auth::check())
+                    <ul class="navbar-nav me-auto fs-5  offset-md-1 fw-bold">
+                        <a class="nav-link " href="{{ route('clientes.index') }}">{{ __('clientes') }}</a>
+                    </ul>
+                    @endif
+
+                    @if (Auth::check())
+                    <ul class="navbar-nav me-auto fs-5  offset-md-1 fw-bold">
+                        <a class="nav-link " href="{{ route('productos.index') }}">{{ __('productos') }}</a>
+                    </ul>
                     @endif
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
