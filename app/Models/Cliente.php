@@ -24,12 +24,12 @@ class Cliente extends Model
 {
 
     static $rules = [
-		'documento' => 'required|unique:clientes,documento',
-		'nombre' => 'required',
-		'apellido' => 'required',
-		'direccion' => 'required',
-		'telefono' => 'required',
-		'Correo' => 'required|unique:clientes,Correo',
+		'documento' => 'required|unique:clientes|min:7|max:15',
+		'nombre' => 'required|min:4|max:15',
+		'apellido' => 'required|min:4|max:15',
+		'direccion' => 'required|min:7|max:25',
+		'telefono' => 'required|min:5|max:15',
+		'Correo' => 'required|unique:clientes,Correo|min:8|max:15'
     ];
 
     protected $perPage = 20;

@@ -84,6 +84,7 @@ class ClienteController extends Controller
      * @param  Cliente $cliente
      * @return \Illuminate\Http\Response
      */
+
     public function update(Request $request, Cliente $cliente)
     {
         request()->validate(Cliente::$rules);

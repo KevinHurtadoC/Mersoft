@@ -52,7 +52,7 @@ return [
     'gt' => [
         'numeric' => 'The :attribute must be greater than :value.',
         'file' => 'The :attribute must be greater than :value kilobytes.',
-        'string' => 'The :attribute must be greater than :value characters.',
+        'string' => 'The :attribute no debe tener mas de :value caracteres.',
         'array' => 'The :attribute must have more than :value items.',
     ],
     'gte' => [
@@ -93,7 +93,7 @@ return [
     'min' => [
         'numeric' => 'The :attribute must be at least :min.',
         'file' => 'The :attribute must be at least :min kilobytes.',
-        'string' => 'La :attribute debe ser de almenos :min caracteres.',
+        'string' => 'El :attribute debe ser de al menos :min caracteres.',
         'array' => 'The :attribute must have at least :min items.',
     ],
     'multiple_of' => 'The :attribute must be a multiple of :value.',
