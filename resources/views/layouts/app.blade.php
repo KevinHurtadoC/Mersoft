@@ -43,20 +43,20 @@
                     @endif
                     @if (Auth::check())
                     <ul class="navbar-nav me-auto fs-5  offset-md-1 fw-bold">
-                        <a class="nav-link " href="{{ route('clientes.index') }}">{{ __('clientes') }}</a>
+                        <a class="nav-link " href="{{ route('clientes.index') }}">{{ __('Clientes') }}</a>
                     </ul>
                     @endif
 
                     @if (Auth::check())
                     <ul class="navbar-nav me-auto fs-5  offset-md-1 fw-bold">
-                        <a class="nav-link " href="{{ route('proveedores.index') }}">{{ __('proveedores') }}</a>
+                        <a class="nav-link " href="{{ route('proveedores.index') }}">{{ __('Proveedores') }}</a>
                     </ul>
                     @endif
 
 
                     @if (Auth::check())
                     <ul class="navbar-nav me-auto fs-5  offset-md-1 fw-bold">
-                        <a class="nav-link " href="{{ route('productos.index') }}">{{ __('productos') }}</a>
+                        <a class="nav-link " href="{{ route('productos.index') }}">{{ __('Productos') }}</a>
                     </ul>
                     @endif
                     </ul>

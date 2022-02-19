@@ -23,7 +23,7 @@ class Usuario extends Model
     static $rules = [
 		'Nombre' => 'required',
 		'Apellido' => 'required',
-		'Correo' => 'required',
+		'Correo' => 'required|unique:usuarios,Correo',
     ];
 
     protected $perPage = 20;
