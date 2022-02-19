@@ -8,7 +8,7 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-8 offset-2">
                 <div class="card">
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -56,7 +56,7 @@
                                             <td>
                                                 <form action="{{ route('usuarios.destroy',$usuario->id) }}" method="POST">
 
-                                                    <a class="btn btn-sm btn-success" href="{{ route('usuarios.edit',$usuario->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
+                                                    <a class="btn btn-sm btn-warning" href="{{ route('usuarios.edit',$usuario->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
                                                     @csrf
                                                     <form action="{{ url('/usuario/'.$usuario->id)}}" class="d-inline" method="post">
                                                         @csrf

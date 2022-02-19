@@ -1,19 +1,19 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Update Producto
+    Editar Producto
 @endsection
 
 @section('content')
-    <section class="content container-fluid">
+    <section class="content container-md offset-4 row align-items-center">
         <div class="">
-            <div class="col-md-12">
+            <div class="col-md-6">
 
                 @includeif('partials.errors')
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Update Producto</span>
+                        <span class="card-title">Editar Producto</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('productos.update', $producto->id) }}"  role="form" enctype="multipart/form-data">
